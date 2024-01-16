@@ -927,6 +927,10 @@ p {
     -o-border-radius: 50%;
 }
 
+.sidebarIcon {
+    display: none;
+}
+
 
 /******tab device******/
 
@@ -997,14 +1001,6 @@ p {
     .grid-item1 {
         width: 100%
     }
-    .grid-item2 {
-        display: none;
-        background-color: #2020204f;
-        padding: 10px;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
     .purchasing #serviceNo {
         padding: 15px 50px
     }
@@ -1049,13 +1045,18 @@ p {
     .navContent {
         display: initial;
     }
-    .togglerBtn {
+    .togglerBtn,
+    .sidebarIcon {
         display: inline-block;
         position: absolute;
         top: 22px;
         z-index: 100;
         left: 20px;
         cursor: pointer;
+    }
+    .sidebarIcon {
+        right: 20px;
+        left: unset
     }
     .logo img {
         padding-left: 55px;
@@ -1097,5 +1098,15 @@ p {
     }
     .container {
         padding: 10px !important;
+        position: relative;
+    }
+    .grid-item2 {
+        background-color: #2020204f;
+        padding: 10px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 95%;
+        display: none
     }
 }
